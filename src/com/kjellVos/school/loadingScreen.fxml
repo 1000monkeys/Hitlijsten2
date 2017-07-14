@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:controller="com.kjellVos.school.LoadingScreenController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="228.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ProgressBar fx:id="progressBar" layoutX="14.0" layoutY="20.0" prefWidth="200.0" progress="0.0" />
+   </children>
+</Pane>

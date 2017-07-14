@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kjellVos.school.chart.ChartController">
+   <children>
+      <Accordion fx:id="accordion" layoutY="105.0" prefHeight="464.0" prefWidth="800.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="537.0" prefWidth="800.0" text="Lijst met edities">
+               <content>
+                  <TableView fx:id="lijstTableView" layoutY="50.0" prefHeight="505.0" prefWidth="775.0">
+                    <columns>
+                      <TableColumn fx:id="editieTableColumn" prefWidth="266.6" text="Editie" />
+                      <TableColumn fx:id="jaarTableColumn" editable="false" prefWidth="266.6" text="Jaar" />
+                        <TableColumn fx:id="weekTableColumn" editable="false" prefWidth="266.6" text="Week" />
+                    </columns>
+                  </TableView>
+               </content></TitledPane>
+          <TitledPane animated="false" prefWidth="800.0" text="Geselecteerde editie bekijken">
+               <content>
+                  <TableView fx:id="editieTableView" prefHeight="505.0" prefWidth="788.0">
+                    <columns>
+                      <TableColumn fx:id="positieTableColumn" editable="false" prefWidth="266.6" text="Positie" />
+                      <TableColumn fx:id="naamTableColumn" editable="false" prefWidth="266.6" text="Naam" />
+                        <TableColumn fx:id="titelTableColumn" editable="false" prefWidth="266.6" text="Titel" />
+                    </columns>
+                  </TableView>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <TextField fx:id="jaarTextField" layoutX="131.0" layoutY="40.0" promptText="ZOEKEN OP JAAR!" />
+      <TextField fx:id="weekTextField" layoutX="525.0" layoutY="40.0" promptText="ZOEKEN OP WEEK!" />
+      <Label layoutX="92.0" layoutY="45.0" text="Jaar:" />
+      <Label layoutX="476.0" layoutY="45.0" text="Week:" />
+   </children>
+</Pane>
